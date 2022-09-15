@@ -384,25 +384,26 @@
                     <use href="./images/sprite.svg#icon-close-btn"></use>
                 </svg>
             </button>
-            <form class="modal-wdw-contact-info" name="contact-info" action="">
+            <form class="modal-wdw-contact-info" name="contact-info" action="/contact">
                 <p class="modal-wdw-title">Leave your information and we'll call you back</p>
-                <label class="modal-wdw-username">Name
+                <label for="username" class="modal-wdw-username">Name</label>
                     <div class="modal-wdw-form-input-wrapper">
                         <input class="modal-wdw-form-input"
                         type="text"
                         name="username"
+                        id="username"
                         pattern="[a-zA-Zа-яА-ЯіІїЇ']+"
                         required/>
                     <svg class="modal-wdw-item-icon">
                         <use class="icon" href="./images/sprite.svg#icon-person"></use>
                     </svg>
                     </div>
-                </label>
-                <label class="modal-wdw-userphone">Telephone
+                <label for="phone" class="modal-wdw-userphone">Telephone</label>
                     <div class="modal-wdw-form-input-wrapper">
                         <input class="modal-wdw-form-input"
                         type="tel"
                         name="phone"
+                        id="phone"
                         pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
                         title="XXX-XXX-XX-XX"
                         required/>
@@ -410,25 +411,22 @@
                         <use class="icon" href="./images/sprite.svg#icon-phone"></use>
                     </svg>
                     </div>
-                </label>
-                <label class="modal-wdw-usermail">E-mail
+                <label for="email" class="modal-wdw-usermail">E-mail</label>
                     <div class="modal-wdw-form-input-wrapper">
-                        <input class="modal-wdw-form-input" type="email" name="email" required/>
+                        <input class="modal-wdw-form-input" type="email" name="email" id="email" required/>
                     <svg class="modal-wdw-item-icon">
                         <use class="icon" href="./images/sprite.svg#icon-email"></use>
                     </svg>
                     </div>
-                </label>
-                <label class="modal-wdw-comments">Comments
-                    <textarea class="modal-wdw-form-input comments" type="textarea" rows="5" name="comments" placeholder="Enter the text"></textarea>
-                </label>
+                <label for="comments" class="modal-wdw-comments">Comments</label>
+                    <textarea class="modal-wdw-form-input modal-wdw-form-input-comments" rows="5" name="comments" id="comments" placeholder="Enter the text"></textarea>
                 <label class="modal-wdw-policy">
                     <input class="modal-wdw-policy-check"
                     type="checkbox" name="policy"/>
                     <svg class="modal-wdw-policy-tickbox">
                         <use class="icon" href="./images/sprite.svg#icon-tick"></use>
                     </svg>
-                    <span class="modal-wdw-policy-text">I agree with the newsletter and accept the Terms and Conditions</span>
+                    <span class="modal-wdw-policy-text">I agree with the newsletter and accept the &#32;<a class="modal-wdw-policy-link" href="#">Terms and Conditions</a></span>
                 </label>
                 <button class="modal-wdw-submit-btn" type="submit">Send</button>
             </form>
